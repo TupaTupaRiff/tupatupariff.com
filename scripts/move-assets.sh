@@ -1,0 +1,10 @@
+mkdir -p public
+mv logo.png public/
+mv guitarra_electrica.jpeg public/
+mv bajo_electrico.jpeg public/
+mv bateria.jpeg public/
+mv ukelele.jpeg public/
+mv Fernando.jpeg public/
+mv Antonio.jpeg public/
+mv IMG-20190813-WA0007~2.jpg public/
+mv 514251462_23865194876469953_3742931374954281679_n.jpg public/
