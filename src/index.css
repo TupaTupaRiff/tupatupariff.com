@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,800&family=Permanent+Marker&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(155, 93, 182, 0.6);
+}
+
+.purple-gradient {
+  background: radial-gradient(circle at top right, rgba(123, 62, 148, 0.35), transparent 70%),
+              radial-gradient(circle at bottom left, rgba(78, 30, 97, 0.4), transparent 60%);
+}
+
+.rock-badge {
+  background: linear-gradient(135deg, #7b3e94, #4e1e61);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0e0b12;
+}
+::-webkit-scrollbar-thumb {
+  background: #7b3e94;
+  border-radius: 4px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
