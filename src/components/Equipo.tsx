@@ -4,7 +4,7 @@ const founders = [
   {
     name: 'Fernan',
     role: 'Profesor de Guitarra, Bajo y Ukelele',
-    desc: 'Guitarrista, compositor y docente musical de Albacete, conocido principalmente por su trayectoria en la escena Metal y Rock en bandas manchegas.\n\nEn su trayectoria musical formó parte de distintas bandas y proyectos de la región y siempre ha mantenido una visión muy práctica y realista del aprendizaje instrumental.',
+    desc: 'Guitarrista, compositor y docente musical de Albacete, conocido principalmente por su trayectoria en la escena Metal y Rock en bandas manchegas.\n\nEn su trayectoria musical formó parte de la mítica banda de Heavy Metal "Centinela" y en bandas de Metal Extremo como "The Heretic" y "Uncreation".\n\nTrabajó como guitarrista en las orquestas de baile "Kalifornia" y "Seven".\n\nActualmente ejerce como guitarrista en la banda tributo "Otra Movida", en el proyecto en solitario del vocalista "Cano" y en su proyecto de Metal Extremo llamado "Josemi".\n\nGraduado en el "Superior de Guitarra Clásica", ha ejercido como profesor durante muchos años llegando a tener cargos de director en distintas academias de música en Albacete.',
     tags: ['Guitarra Eléctrica', 'Bajo', 'Ukelele'],
     photos: ['/IMG-20190813-WA0007~2.jpg'],
   },
