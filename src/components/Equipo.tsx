@@ -85,8 +85,8 @@ export default function Equipo() {
           <span className="text-brand-purpleLight font-rock text-lg">Promotores y Músicos en Activo</span>
           <h2 className="text-3xl sm:text-5xl font-black text-white mt-1">Conoce al Equipo</h2>
           <p className="text-slate-400 mt-3 text-base">
-            Un proyecto fundado en régimen de microcooperativa por Fernando Moya y Antonio Cebrián,
-            con dedicación docente y pasión por la música.
+            Un proyecto fundado en régimen de cooperativa por Fernando Moya y Antonio Cebrián,
+            dos músicos albaceteños con grandes tablas y con mucha experiencia como docentes.
           </p>
         </div>
 
