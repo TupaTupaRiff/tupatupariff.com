@@ -1,17 +1,25 @@
-import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+import { createClient } from "npm:@supabase/supabase-js@2";
 
-const corsHeaders = {
-  'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
-  'Access-Control-Allow-Methods': 'POST, OPTIONS',
-};
+Deno.serve(async (req: Request) => {
+  const supabaseUrl = Deno.env.get("SUPABASE_URL");
+  const serviceRoleKey = Deno.env.get("SERVICE_ROLE_KEY");
 
-Deno.serve(async (req) => {
-  if (req.method === 'OPTIONS') {
-    return new Response('ok', { headers: corsHeaders });
+  if (!supabaseUrl || !serviceRoleKey) {
+    return new Response(
+      JSON.stringify({
+        error: "Missing SUPABASE_URL or SERVICE_ROLE_KEY",
+      }),
+      {
+        status: 500,
+        headers: { "Content-Type": "application/json" },
+      }
+    );
   }
 
+  const supabase = createClient(supabaseUrl, serviceRoleKey);
+
   try {
+    const body = await req.json();
     const {
       name,
       email,
@@ -20,90 +28,43 @@ Deno.serve(async (req) => {
       level,
       preferred_shift,
       comments,
-    } = await req.json();
+    } = body;
 
-    if (!name || !email || !phone) {
+    const { error } = await supabase.from("booking_requests").insert([
+      {
+        name,
+        email,
+        phone,
+        instrument,
+        level,
+        preferred_shift,
+        comments,
+      },
+    ]);
+
+    if (error) {
       return new Response(
-        JSON.stringify({ error: 'Faltan campos obligatorios' }),
+        JSON.stringify({ error: error.message }),
         {
           status: 400,
-          headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+          headers: { "Content-Type": "application/json" },
         }
       );
-    }
-
-    const supabaseAdmin = createClient(
-      Deno.env.get('SUPABASE_URL')!,
-      Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!
-    );
-
-    const { error: dbError } = await supabaseAdmin.from('booking_requests').insert({
-      name,
-      email,
-      phone,
-      instrument,
-      level,
-      preferred_shift,
-      comments: comments || null,
-    });
-
-    if (dbError) {
-      throw dbError;
-    }
-
-    const resendApiKey = Deno.env.get('RESEND_API_KEY');
-    if (!resendApiKey) {
-      throw new Error('Falta RESEND_API_KEY');
-    }
-
-    const emailBody = `
-Solicitud de clase de prueba
-
-Nombre: ${name}
-Email: ${email}
-Teléfono: ${phone}
-Instrumento: ${instrument}
-Nivel: ${level}
-Horario: ${preferred_shift}
-Comentarios: ${comments || 'Sin comentarios'}
-    `.trim();
-
-    const resendResponse = await fetch('https://api.resend.com/emails', {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${resendApiKey}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        from: 'Tupa Tupa Riff <info@tupatupariff.com>',
-        to: ['info@tupatupariff.com'],
-        subject: 'Nueva solicitud de clase de prueba',
-        text: emailBody,
-      }),
-    });
-
-    if (!resendResponse.ok) {
-      const errorText = await resendResponse.text();
-      throw new Error(`Resend error: ${errorText}`);
     }
 
     return new Response(
       JSON.stringify({ ok: true }),
       {
-        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+        status: 200,
+        headers: { "Content-Type": "application/json" },
       }
     );
-  } catch (error) {
-    console.error(error);
-
+  } catch (err) {
     return new Response(
-      JSON.stringify({
-        ok: false,
-        error: error instanceof Error ? error.message : 'Unknown error',
-      }),
+      JSON.stringify({ error: "Invalid JSON payload" }),
       {
-        status: 500,
-        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+        status: 400,
+        headers: { "Content-Type": "application/json" },
       }
     );
   }
