@@ -1,5 +1,4 @@
 import { useState, type FormEvent } from 'react';
-import { supabase } from '@/lib/supabase';
 
 const instruments = [
   'Guitarra Eléctrica',
@@ -34,46 +33,46 @@ export default function Matricula() {
     setStatus('submitting');
     setErrorMsg('');
 
-const response = await fetch(
-  `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-booking-email`,
-  {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
-    },
-    body: JSON.stringify({
-      name: form.name,
-      email: form.email,
-      phone: form.phone,
-      instrument: form.instrument,
-      level: form.level,
-      preferred_shift: form.preferred_shift,
-      comments: form.comments || '',
-    }),
-  }
-);
+    try {
+      const response = await fetch(
+        `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-booking-email`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
+          },
+          body: JSON.stringify({
+            name: form.name,
+            email: form.email,
+            phone: form.phone,
+            instrument: form.instrument,
+            level: form.level,
+            preferred_shift: form.preferred_shift,
+            comments: form.comments || '',
+          }),
+        }
+      );
 
-if (!response.ok) {
-  throw new Error('No se pudo enviar la solicitud');
-}
+      if (!response.ok) {
+        throw new Error('Error al enviar la solicitud');
+      }
 
-    if (error) {
+      setStatus('success');
+      setForm({
+        name: '',
+        email: '',
+        phone: '',
+        instrument: instruments[0],
+        level: levels[0],
+        preferred_shift: shifts[0],
+        comments: '',
+      });
+    } catch (error) {
+      console.error(error);
       setStatus('error');
       setErrorMsg('No se pudo enviar la solicitud. Inténtalo de nuevo en unos minutos.');
-      return;
     }
-
-    setStatus('success');
-    setForm({
-      name: '',
-      email: '',
-      phone: '',
-      instrument: instruments[0],
-      level: levels[0],
-      preferred_shift: shifts[0],
-      comments: '',
-    });
   };
 
   const inputClass =
@@ -105,6 +104,7 @@ if (!response.ok) {
                   className={inputClass}
                 />
               </div>
+
               <div>
                 <label className={labelClass}>Correo Electrónico *</label>
                 <input
@@ -130,6 +130,7 @@ if (!response.ok) {
                   className={inputClass}
                 />
               </div>
+
               <div>
                 <label className={labelClass}>Instrumento de Interés *</label>
                 <select
@@ -157,6 +158,7 @@ if (!response.ok) {
                   ))}
                 </select>
               </div>
+
               <div>
                 <label className={labelClass}>Preferencia de Horario</label>
                 <select
@@ -185,7 +187,7 @@ if (!response.ok) {
             <button
               type="submit"
               disabled={status === 'submitting'}
-              className="w-full py-4 bg-brand-purple hover:bg-brand-purpleLight text-white font-black text-sm uppercase tracking-wider rounded-xl shadow-lg shadow-brand-purple/40 hover:shadow-brand-purple/70 transition"
+              className="w-full py-4 bg-brand-purple hover:bg-brand-purpleLight text-white font-black text-sm uppercase tracking-wider rounded-xl shadow-lg shadow-brand-purple/40 hover:shadow-brand-purple/60 transition"
             >
               {status === 'submitting' ? 'Enviando...' : 'Enviar Solicitud de Clase de Prueba'}
             </button>
