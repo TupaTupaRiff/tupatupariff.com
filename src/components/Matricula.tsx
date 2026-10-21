@@ -34,15 +34,29 @@ export default function Matricula() {
     setStatus('submitting');
     setErrorMsg('');
 
-    const { error } = await supabase.from('booking_requests').insert({
+const response = await fetch(
+  `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-booking-email`,
+  {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
+    },
+    body: JSON.stringify({
       name: form.name,
       email: form.email,
       phone: form.phone,
       instrument: form.instrument,
       level: form.level,
       preferred_shift: form.preferred_shift,
-      comments: form.comments || null,
-    });
+      comments: form.comments || '',
+    }),
+  }
+);
+
+if (!response.ok) {
+  throw new Error('No se pudo enviar la solicitud');
+}
 
     if (error) {
       setStatus('error');
