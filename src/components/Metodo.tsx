@@ -30,7 +30,7 @@ const steps = [
     phase: 'Fase 4',
     phaseColor: 'text-brand-purpleLight',
     title: 'Ensayos, Directos y Conciertos',
-    desc: 'Subirse a las tablas. Organizamos conciertos y audiciones para que experimentes la adrenalina del directo con sonido real.',
+    desc: 'Subirse a las tablas. Organizamos conciertos para que experimentes la adrenalina del directo con sonido real.',
     note: 'La meta definitiva: ser músico en vivo.',
     num: 4,
     bgColor: 'bg-brand-gold',
