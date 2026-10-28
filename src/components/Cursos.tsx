@@ -16,7 +16,7 @@ const instruments = [
     features: ['Enfoque armónico y rítmico', 'Creación de líneas de bajo'],
   },
   {
-    image: '/bateria.jpeg_v2',
+    image: '/bateria_v2.jpeg',
     fit: 'cover' as const,
     name: 'Batería',
     subtitle: 'Tempo, Potencia e Independencia',
@@ -24,7 +24,7 @@ const instruments = [
     features: ['Aula de batería acondicionada', 'Práctica con metrónomo y play-alongs'],
   },
   {
-    image: '/ukelele.jpeg_v2',
+    image: '/ukelele_v2.jpeg',
     fit: 'contain' as const,
     name: 'Ukelele',
     subtitle: 'Iniciación Rápida & Versátil',
