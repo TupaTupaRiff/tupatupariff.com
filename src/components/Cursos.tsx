@@ -24,7 +24,7 @@ const instruments = [
     features: ['Aula de batería acondicionada', 'Práctica con metrónomo y play-alongs'],
   },
   {
-    image: '/ukelele_v3.jpeg',
+    image: '/ukelele_v4.jpeg',
     fit: 'contain' as const,
     name: 'Ukelele',
     subtitle: 'Iniciación Rápida & Versátil',
