@@ -2,7 +2,7 @@ const pillars = [
   {
     num: '01',
     title: 'Repertorio Real desde el Día 1',
-    desc: 'Aprende acordes, ritmos y técnicas tocando los temas de tus bandas favoritas: rock, metal, punk, grunge, stoner, blues, funk, indie, pop...',
+    desc: 'Aprende acordes, ritmos y técnicas tocando temas de tus bandas favoritas: rock, metal, punk, grunge, stoner, blues, funk, indie, pop...',
     tag: 'Práctica aplicada inmediata',
   },
   {
