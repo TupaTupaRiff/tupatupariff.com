@@ -57,7 +57,7 @@ export default function Hero() {
                 />
                 <div className="mt-4 px-4 py-2 bg-brand-dark/80 rounded-lg border border-brand-darkBorder w-full">
                   <p className="text-xs font-semibold text-slate-300 italic">
-                    "No abrimos una escuela para dar clases de música. Creamos un lugar donde la música conecte a las personas."
+                    "No abrimos una escuela para dar clases de música. Creamos un lugar donde la pasión por la música conecta a las personas."
                   </p>
                 </div>
               </div>
