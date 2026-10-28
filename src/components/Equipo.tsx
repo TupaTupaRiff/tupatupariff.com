@@ -86,7 +86,7 @@ export default function Equipo() {
           <h2 className="text-3xl sm:text-5xl font-black text-white mt-1">Conoce al Equipo</h2>
           <p className="text-slate-400 mt-3 text-base">
             Un proyecto fundado en régimen de cooperativa por Fernando Moya y Antonio Cebrián,
-            dos músicos albaceteños con grandes tablas y con mucha experiencia como docentes.
+            dos músicos albaceteños con muchas tablas y gran experiencia como docentes.
           </p>
         </div>
 
