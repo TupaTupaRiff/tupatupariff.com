@@ -1,6 +1,6 @@
 const instruments = [
   {
-    image: '/guitarra_electrica_v3.jpeg',
+    image: '/guitarra_electrica_v4.jpeg',
     fit: 'contain' as const,
     name: 'Guitarra',
     subtitle: 'Eléctrica & Acústica',
@@ -8,7 +8,7 @@ const instruments = [
     features: ['Todos los estilos contemporáneos', 'Configuración de efectos y amplis'],
   },
   {
-    image: '/bajo_electrico_v3.jpeg',
+    image: '/bajo_electrico_v4.jpeg',
     fit: 'contain' as const,
     name: 'Bajo Eléctrico',
     subtitle: 'Groove & Fundamento',
@@ -16,7 +16,7 @@ const instruments = [
     features: ['Enfoque armónico y rítmico', 'Creación de líneas de bajo'],
   },
   {
-    image: '/bateria_v3.jpeg',
+    image: '/bateria_v5.jpeg',
     fit: 'cover' as const,
     name: 'Batería',
     subtitle: 'Tempo, Potencia e Independencia',
@@ -24,7 +24,7 @@ const instruments = [
     features: ['Aula de batería acondicionada', 'Práctica con metrónomo y play-alongs'],
   },
   {
-    image: '/ukelele_v3.jpeg',
+    image: '/ukelele_v4.jpeg',
     fit: 'contain' as const,
     name: 'Ukelele',
     subtitle: 'Iniciación Rápida & Versátil',
