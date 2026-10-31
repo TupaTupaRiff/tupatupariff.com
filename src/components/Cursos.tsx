@@ -1,15 +1,13 @@
 const instruments = [
   {
-    image: '/guitarra_electrica_v4.jpeg',
-    fit: 'contain' as const,
+    image: '/guitarra_electrica_v2.jpeg',
     name: 'Guitarra',
     subtitle: 'Eléctrica & Acústica',
-    desc: 'Riffs, acordes abiertos y con cejilla, quintas, técnica de púa y dedos, escalas pentatónicas, solos e improvisación sobre canciones de rock.',
+    desc: 'Riffs, acordes abiertos y con cejilla, quintas, técnica de púa y dedos, escalas pentatónicas, solos e improvisación sobre canciones de rock y otros estilos.',
     features: ['Todos los estilos contemporáneos', 'Configuración de efectos y amplis'],
   },
   {
-    image: '/bajo_electrico_v4.jpeg',
-    fit: 'contain' as const,
+    image: '/bajo_electrico_v2.jpeg',
     name: 'Bajo Eléctrico',
     subtitle: 'Groove & Fundamento',
     desc: 'Conviértete en el motor de la banda. Pulso, digitación, coordinación rítmica con el bombo, técnicas de dedos, púa y slap en diferentes géneros.',
@@ -17,15 +15,13 @@ const instruments = [
   },
   {
     image: '/bateria_v6.jpeg',
-    fit: 'cover' as const,
-    name: 'Batería acústica',
+    name: 'Batería',
     subtitle: 'Tempo, Potencia e Independencia',
-    desc: 'Aula insonorizada específica. Agarre de baquetas, rudimentos, independencia de extremidades, dinámicas y los ritmos icónicos del rock.',
+    desc: 'Aula insonorizada específica. Agarre de baquetas, rudimentos, redobles, independencia de extremidades, dinámicas y ritmos icónicos de estilos variados.',
     features: ['Aula de batería acondicionada', 'Práctica con metrónomo y play-alongs'],
   },
   {
-    image: '/ukelele_v4.jpeg',
-    fit: 'contain' as const,
+    image: '/ukelele_v2.jpeg',
     name: 'Ukelele',
     subtitle: 'Iniciación Rápida & Versátil',
     desc: 'El instrumento perfecto para adentrarse en la música sin complicaciones. Ideal tanto para niños como para adultos que desean acompañar canciones.',
@@ -58,13 +54,14 @@ export default function Cursos() {
               key={inst.name}
               className="bg-brand-darkCard rounded-2xl p-6 border border-brand-darkBorder hover:border-brand-purpleLight transition-all duration-300 hover:-translate-y-1"
             >
-              <div className="w-full h-40 rounded-xl overflow-hidden mb-5 border border-brand-darkBorder bg-black flex items-center justify-center">
+              <div className="relative w-full aspect-[3/2] overflow-hidden rounded-xl mb-5 border border-brand-darkBorder bg-black">
                 <img
                   src={inst.image}
                   alt={inst.name}
-                  className={`w-full h-full transition duration-500 hover:scale-105 ${inst.fit === 'cover' ? 'object-cover' : 'object-contain'}`}
+                  className="h-full w-full object-cover object-center transition duration-500 hover:scale-105"
                 />
               </div>
+
               <h3 className="text-xl font-bold text-white mb-2">{inst.name}</h3>
               <p className="text-xs text-brand-purpleLight font-semibold mb-3">{inst.subtitle}</p>
               <p className="text-sm text-slate-400 mb-6 leading-relaxed">{inst.desc}</p>
