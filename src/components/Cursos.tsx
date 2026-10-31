@@ -1,13 +1,13 @@
 const instruments = [
   {
-    image: '/guitarra_electrica_v2.jpeg',
+    image: '/guitarra_electrica_v4.jpeg',
     name: 'Guitarra',
     subtitle: 'Eléctrica & Acústica',
     desc: 'Riffs, acordes abiertos y con cejilla, quintas, técnica de púa y dedos, escalas pentatónicas, solos e improvisación sobre canciones de rock y otros estilos.',
     features: ['Todos los estilos contemporáneos', 'Configuración de efectos y amplis'],
   },
   {
-    image: '/bajo_electrico_v2.jpeg',
+    image: '/bajo_electrico_v4.jpeg',
     name: 'Bajo Eléctrico',
     subtitle: 'Groove & Fundamento',
     desc: 'Conviértete en el motor de la banda. Pulso, digitación, coordinación rítmica con el bombo, técnicas de dedos, púa y slap en diferentes géneros.',
@@ -21,7 +21,7 @@ const instruments = [
     features: ['Aula de batería acondicionada', 'Práctica con metrónomo y play-alongs'],
   },
   {
-    image: '/ukelele_v2.jpeg',
+    image: '/ukelele_v4.jpeg',
     name: 'Ukelele',
     subtitle: 'Iniciación Rápida & Versátil',
     desc: 'El instrumento perfecto para adentrarse en la música sin complicaciones. Ideal tanto para niños como para adultos que desean acompañar canciones.',
