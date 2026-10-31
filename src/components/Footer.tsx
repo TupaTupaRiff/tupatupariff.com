@@ -11,7 +11,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-3 pt-2">
               <span className="w-2.5 h-2.5 rounded-full bg-green-500" />
-              <span className="text-xs text-slate-300 font-semibold">Matrículas abiertas curso actual</span>
+              <span className="text-xs text-slate-300 font-semibold">Matrículas abiertas curso 2026-2027</span>
             </div>
           </div>
 
