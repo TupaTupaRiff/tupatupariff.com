@@ -17,8 +17,8 @@ const instruments = [
     image: '/bateria_v6.jpeg',
     name: 'Batería acústica',
     subtitle: 'Tempo, Potencia e Independencia',
-    desc: 'Aula insonorizada específica. Agarre de baquetas, rudimentos, redobles, independencia de extremidades, dinámicas, uso del doble pedal y ritmos icónicos de estilos variados.',
-    features: ['Aula de batería acondicionada', 'Práctica con metrónomo y play-alongs'],
+    desc: 'Agarre de baquetas, rudimentos, redobles, independencia de extremidades, dinámicas, uso del doble pedal y ritmos icónicos de estilos variados.',
+    features: ['Aula de batería insonorizada', 'Práctica con metrónomo y play-alongs'],
   },
   {
     image: '/ukelele_v4.jpeg',
