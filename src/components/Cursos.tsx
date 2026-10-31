@@ -15,7 +15,7 @@ const instruments = [
   },
   {
     image: '/bateria_v6.jpeg',
-    name: 'Batería',
+    name: 'Batería acústica',
     subtitle: 'Tempo, Potencia e Independencia',
     desc: 'Aula insonorizada específica. Agarre de baquetas, rudimentos, redobles, independencia de extremidades, dinámicas y ritmos icónicos de estilos variados.',
     features: ['Aula de batería acondicionada', 'Práctica con metrónomo y play-alongs'],
