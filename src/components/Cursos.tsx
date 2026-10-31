@@ -16,7 +16,7 @@ const instruments = [
     features: ['Enfoque armónico y rítmico', 'Creación de líneas de bajo'],
   },
   {
-    image: '/bateria_v5.jpeg',
+    image: '/bateria_v6.jpeg',
     fit: 'cover' as const,
     name: 'Batería acústica',
     subtitle: 'Tempo, Potencia e Independencia',
