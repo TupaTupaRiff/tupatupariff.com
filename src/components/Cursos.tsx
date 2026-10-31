@@ -1,6 +1,6 @@
 const instruments = [
   {
-    image: '/guitarra_electrica_v5.jpeg',
+    image: '/guitarra_electrica_v6.jpeg',
     fit: 'contain' as const,
     name: 'Guitarra',
     subtitle: 'Eléctrica & Acústica',
