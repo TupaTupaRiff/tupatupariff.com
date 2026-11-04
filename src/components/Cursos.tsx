@@ -38,7 +38,7 @@ export default function Cursos() {
             <span className="text-brand-purpleLight font-rock text-lg">Catálogo Formativo</span>
             <h2 className="text-3xl sm:text-5xl font-black text-white mt-1">Elige tu Instrumento</h2>
             <p className="text-slate-400 mt-2 max-w-xl text-sm sm:text-base">
-              Desde iniciación infantil y juvenil hasta adultos que buscan perfeccionar su sonido.
+              Adaptado para niños, adolescentes y adultos.
             </p>
           </div>
           <div className="flex items-center gap-2">
