@@ -6,7 +6,7 @@ export default function Hero() {
           <div className="lg:col-span-7 text-center lg:text-left space-y-6">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-purple/30 border border-brand-purpleLight/40 text-brand-purpleLight text-xs font-bold uppercase tracking-[0.2em]">
               <span className="w-2 h-2 rounded-full bg-brand-gold animate-ping" />
-              Nuevo Espacio Musical en Albacete Capital
+              Escuela de Rock en Albacete Capital
             </div>
 
             <h1 className="text-4xl sm:text-6xl xl:text-7xl font-black tracking-tight leading-none uppercase">
@@ -57,7 +57,7 @@ export default function Hero() {
                 />
                 <div className="mt-4 px-4 py-2 bg-brand-dark/80 rounded-lg border border-brand-darkBorder w-full">
                   <p className="text-xs font-semibold text-slate-300 italic">
-                    "No abrimos una escuela para dar clases de música. Creamos una comunidad que conecta a las personas a través de la música."
+                    "No abrimos una escuela para dar clases de música. Creamos un espacio donde la música conecta a las personas."
                   </p>
                 </div>
               </div>
