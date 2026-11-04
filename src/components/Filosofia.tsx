@@ -30,7 +30,7 @@ export default function Filosofia() {
           </h2>
           <p className="text-slate-400 mt-4 text-base sm:text-lg">
             A diferencia de métodos anticuados y rígidos, en Tupa Tupa Riff apostamos por la inmersión desde el primer
-            día en un ambiente libre de presiones, creativo y colaborativo.
+            día en un ambiente libre de presiones, creativo y colaborativo. Nuestra filosofía es la del aprendizaje basado en la práctica y en la conexión con el instrumento.
           </p>
         </div>
 
