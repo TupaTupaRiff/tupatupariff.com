@@ -17,7 +17,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-lg sm:text-xl text-slate-300 font-light max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Un espacio donde los músicos empiezan, evolucionan y permanecen. Olvídate del aburrimiento: toca
+              Un lugar donde los músicos empiezan, evolucionan y permanecen. Olvídate del aburrimiento: toca
               canciones reales, aprende técnica práctica, inyecta tu esencia y súbete al escenario.
             </p>
 
