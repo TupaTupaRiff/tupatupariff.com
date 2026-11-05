@@ -41,16 +41,16 @@ export default function Footer() {
             <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-4">Horarios del centro</h4>
             <ul className="text-xs space-y-2">
               <li>
-                <strong className="text-slate-200">Lunes a Viernes:</strong>
+                <strong className="text-slate-200">lunes a viernes:</strong>
                 <br />
                 10:00 - 12:00 | 16:00 - 22:00
               </li>
               <li className="pt-1">
-                <strong className="text-slate-200">Sábados:</strong>
+                <strong className="text-slate-200">sábados:</strong>
                 <br />
                 10:00 - 14:00
               </li>
-              <li className="pt-1 text-brand-gold">Domingos cerrado</li>
+              <li className="pt-1 text-brand-gold">domingos cerrado</li>
             </ul>
           </div>
         </div>
