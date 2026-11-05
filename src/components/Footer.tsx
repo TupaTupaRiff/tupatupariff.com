@@ -6,8 +6,8 @@ export default function Footer() {
           <div className="md:col-span-2 space-y-4">
             <img src="/logo.png" alt="Tupa Tupa Riff" className="h-16 w-auto object-contain" />
             <p className="text-xs text-slate-400 max-w-sm leading-relaxed">
-              Escuela de Rock y Música Moderna en Albacete. Microcooperativa de trabajo asociado fundada por Fernando
-              Moya y Antonio Cebrián. Sube el volumen, rompe las reglas.
+              Escuela de Rock en Albacete. Microcooperativa de trabajo asociado fundada por Fernando
+              Moya y Antonio Cebrián.
             </p>
             <div className="flex items-center gap-3 pt-2">
               <span className="w-2.5 h-2.5 rounded-full bg-green-500" />
@@ -38,7 +38,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-4">Horarios del Centro</h4>
+            <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-4">Horarios del centro</h4>
             <ul className="text-xs space-y-2">
               <li>
                 <strong className="text-slate-200">Lunes a Viernes:</strong>
