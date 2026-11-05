@@ -83,7 +83,7 @@ export default function Equipo() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-brand-purpleLight font-rock text-lg">Promotores y Músicos en Activo</span>
-          <h2 className="text-3xl sm:text-5xl font-black text-white mt-1">Conoce al Equipo</h2>
+          <h2 className="text-3xl sm:text-5xl font-black text-white mt-1">Conoce al equipo</h2>
           <p className="text-slate-400 mt-3 text-base">
             Un proyecto fundado en régimen de cooperativa por Fernando Moya y Antonio Cebrián,
             dos músicos albaceteños con tablas en los escenarios y experiencia como docentes.
