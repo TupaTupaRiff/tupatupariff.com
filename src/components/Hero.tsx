@@ -33,7 +33,7 @@ export default function Hero() {
             <div className="pt-6 grid grid-cols-3 gap-4 border-t border-brand-darkBorder/60 text-center">
               <div>
                 <p className="text-2xl font-black text-white">126 m²</p>
-                <p className="text-xs text-slate-400">Instalaciones Insonorizadas</p>
+                <p className="text-xs text-slate-400">Instalaciones acondicionadas</p>
               </div>
               <div>
                 <p className="text-2xl font-black text-brand-purpleLight">Aulas</p>
