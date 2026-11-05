@@ -2,7 +2,7 @@ const steps = [
   {
     phase: 'Fase 1',
     phaseColor: 'text-brand-gold',
-    title: 'Descubrimiento y Primer Contacto',
+    title: 'Descubrimiento y primer contacto',
     desc: 'Te familiarizas con el instrumento, interiorizas la postura correcta y tocas tus primeros acordes y ritmos reales.',
     note: 'Pérdida del miedo escénico al instrumento.',
     num: 1,
@@ -11,7 +11,7 @@ const steps = [
   {
     phase: 'Fase 2',
     phaseColor: 'text-brand-purpleLight',
-    title: 'Técnica, Confianza y Autonomía',
+    title: 'Técnica, confianza y autonomía',
     desc: 'Afinación, lenguaje musical práctico, precisión rítmica y educación del oído para poder aprender canciones por ti mismo.',
     note: 'Desarrollo del criterio musical y técnica limpia.',
     num: 2,
@@ -20,7 +20,7 @@ const steps = [
   {
     phase: 'Fase 3',
     phaseColor: 'text-brand-gold',
-    title: 'Combos y Dinámica Grupal',
+    title: 'Combos y dinámica grupal',
     desc: 'Aprender a escuchar a los demás, cuadrar con la batería, empastar con el bajo y sonar como una auténtica banda de rock.',
     note: 'Trabajo en equipo y cohesión sonora.',
     num: 3,
@@ -29,7 +29,7 @@ const steps = [
   {
     phase: 'Fase 4',
     phaseColor: 'text-brand-purpleLight',
-    title: 'Ensayos, Directos y Conciertos',
+    title: 'Ensayos, directos y conciertos',
     desc: 'Subirse a las tablas. Organizamos conciertos para que experimentes la adrenalina del directo con sonido real.',
     note: 'La meta definitiva: ser músico en vivo.',
     num: 4,
