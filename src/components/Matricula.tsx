@@ -20,7 +20,7 @@ export default function Matricula() {
 
         <div className="bg-brand-darkCard border border-brand-darkBorder rounded-3xl p-6 sm:p-10 shadow-2xl text-center">
           <p className="text-slate-300 mb-6">
-            Para consultar o reservar una clase de prueba, ponte en contacto con nosotros.
+            Para consultar o reservar una clase de prueba, ponte en contacto con nosotros por teléfono o por correo electrónico.
           </p>
           <a
             href="#contacto"
