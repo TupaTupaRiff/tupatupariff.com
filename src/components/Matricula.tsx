@@ -10,7 +10,7 @@ export default function Matricula() {
             Comienza tu andadura
           </span>
           <h2 className="text-3xl sm:text-5xl font-black text-white mt-1">
-            Reserva tu Clase de Prueba
+            Reserva tu clase de prueba
           </h2>
           <p className="text-slate-400 mt-2 text-sm sm:text-base">
             Sin compromiso. Ven a conocer las instalaciones, prueba el instrumento
