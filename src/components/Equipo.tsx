@@ -3,16 +3,16 @@ import { useState } from 'react';
 const founders = [
   {
     name: 'Fernan',
-    role: 'Profesor de Guitarra, Bajo y Ukelele',
+    role: 'Profesor de guitarra, bajo y ukelele',
     desc: 'Guitarrista, compositor y docente musical de Albacete, conocido principalmente por su trayectoria en la escena Metal y Rock en bandas manchegas.\n\nEn su trayectoria musical formó parte de la mítica banda de Heavy Metal "Centinela" y en bandas de Metal Extremo como "The Heretic" y "Uncreation".\n\nTrabajó en las orquestas de baile "Kalifornia" y "Seven".\n\nActualmente ejerce como guitarrista en la banda tributo "Otra Movida", en el proyecto en solitario del vocalista "Cano" y en su proyecto de Metal Extremo llamado "Josemi".\n\nGraduado en el "Superior de Guitarra Clásica", ha ejercido como profesor durante muchos años llegando a tener cargos de director en distintas academias de música en Albacete.',
-    tags: ['Guitarra Eléctrica', 'Bajo', 'Ukelele'],
+    tags: ['Guitarra eléctrica', 'Bajo', 'Ukelele'],
     photos: ['/IMG-20190813-WA0007~2.jpg'],
   },
   {
     name: 'Toñín',
-    role: 'Profesor de Batería',
+    role: 'Profesor de batería',
     desc: 'Más de media vida dedicada a la música. Especializado en ritmos y grooves de Metal, Rock y Punk.\n\nFundador de "Insaniam", banda albaceteña de Metal Extremo con la que ha compuesto y grabado 4 álbumes de estudio hasta la fecha y con la que ha girado por toda España y Portugal, llegando a tocar en festivales de prestigio como "Viña Rock", "Alterna Festival", "Ginetarock", "Kanekas Metal Fest" y "Dimetal Fest" entre otros, y compartiendo escenario con bandas nacionales como "Angelus Apatrida", "Soziedad Alkoholika" o "Narco" y con bandas internacionales como "Destruction", "Bonfire" o "Sinister".\n\nTambién ha sido batería en otras bandas de Metal como "Reincarnation", "Gennotype" y "Lux In Tenebre".\n\nDesde el año 2017 es miembro de "Orquesta Kalifornia", con la que también se ha adentrado en otros géneros musicales como Pop, Funk, Indie, Rumba, Electrónica, Música Latina...',
-    tags: ['Batería Acústica', 'Ritmo & Dinámicas', 'Combos'],
+    tags: ['Batería acústica', 'Ritmo y dinámicas', 'Combos'],
     photos: ['/514251462_23865194876469953_3742931374954281679_n.jpg'],
   },
 ];
