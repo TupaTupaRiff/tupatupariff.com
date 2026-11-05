@@ -1,19 +1,19 @@
 const pillars = [
   {
     num: '01',
-    title: 'Repertorio Real desde el Día 1',
+    title: 'Repertorio real desde el día 1',
     desc: 'Aprende acordes, ritmos y técnicas tocando temas de tus bandas favoritas: rock, metal, punk, grunge, stoner, blues, funk, indie, pop...',
     tag: 'Práctica aplicada inmediata',
   },
   {
     num: '02',
-    title: 'Tutoría Personalizada',
+    title: 'Tutoría personalizada',
     desc: 'Clases individuales o en grupos muy reducidos. Adaptamos los objetivos y el ritmo según tu edad, expectativas y gustos personales.',
     tag: 'Sin masificación, 100% a tu medida',
   },
   {
     num: '03',
-    title: 'Cultura & Comunidad',
+    title: 'Cultura y comunidad',
     desc: 'Asesoramiento para elegir instrumento, mantenimiento y ajustes, dinámicas de combo para tocar en conjunto y sesiones en directo con público.',
     tag: 'Conecta con otros músicos',
   },
