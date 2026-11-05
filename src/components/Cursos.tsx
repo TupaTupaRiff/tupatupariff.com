@@ -8,22 +8,22 @@ const instruments = [
   },
   {
     image: '/bajo_electrico_v4.jpeg',
-    name: 'Bajo Eléctrico',
-    subtitle: 'Groove & Fundamento',
+    name: 'Bajo eléctrico',
+    subtitle: 'Groove y fundamento',
     desc: 'Conviértete en el motor de la banda. Pulso, digitación, coordinación rítmica con el bombo, técnicas de dedos, púa y slap en diferentes géneros.',
     features: ['Enfoque armónico y rítmico', 'Creación de líneas de bajo'],
   },
   {
     image: '/bateria_v6.jpeg',
     name: 'Batería acústica',
-    subtitle: 'Tempo, Potencia e Independencia',
+    subtitle: 'Tempo, potencia e independencia',
     desc: 'Agarre de baquetas, rudimentos, redobles, independencia de extremidades, dinámicas, técnica de doble pedal y ritmos icónicos de estilos variados.',
     features: ['Aula de batería insonorizada', 'Práctica con metrónomo y play-alongs'],
   },
   {
     image: '/ukelele_v4.jpeg',
     name: 'Ukelele',
-    subtitle: 'Iniciación Rápida & Versátil',
+    subtitle: 'Iniciación rápida y versátil',
     desc: 'El instrumento perfecto para adentrarse en la música sin complicaciones. Ideal tanto para niños como para adultos que desean acompañar canciones.',
     features: ['Ritmos de rasgueo y punteos', 'Resultados desde la primera sesión'],
   },
@@ -36,7 +36,7 @@ export default function Cursos() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>
             <span className="text-brand-purpleLight font-rock text-lg">Catálogo Formativo</span>
-            <h2 className="text-3xl sm:text-5xl font-black text-white mt-1">Elige tu Instrumento</h2>
+            <h2 className="text-3xl sm:text-5xl font-black text-white mt-1">Elige tu instrumento</h2>
             <p className="text-slate-400 mt-2 max-w-xl text-sm sm:text-base">
               Adaptado para niños, adolescentes y adultos.
             </p>
