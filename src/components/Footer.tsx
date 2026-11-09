@@ -28,7 +28,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-brand-purpleLight">📞</span>
-                <span>Atención e inscripciones</span>
+                <span>(+34) 672 963 721</span>
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-brand-purpleLight">✉️</span>
