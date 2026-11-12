@@ -1,6 +1,6 @@
 const facilities = [
   { title: '126 m² útiles', desc: 'Distribución amplia con ventilación e iluminación óptima.' },
-  { title: '5 aulas independientes', desc: 'Espacios especializados para clases individuales y colectivas.' },
+  { title: '5 salas independientes', desc: 'Espacios especializados para clases individuales y colectivas.' },
   { title: 'Insonorización', desc: 'Acondicionamiento acústico específico para batería y amplificación.' },
   { title: 'Sala de ensayo (próximamente)', desc: 'Equipada con backline disponible por horas para grupos locales.' },
 ];
@@ -8,7 +8,6 @@ const facilities = [
 const hours = [
   { day: 'lunes a viernes (mañanas)', time: '10:00 - 12:00' },
   { day: 'lunes a viernes (tardes)', time: '16:00 - 22:00' },
-  { day: 'sábados (mañanas)', time: '10:00 - 14:00', last: true },
 ];
 
 export default function Local() {
