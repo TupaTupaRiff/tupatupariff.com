@@ -46,11 +46,9 @@ export default function Footer() {
                 10:00 - 12:00 | 16:00 - 22:00
               </li>
               <li className="pt-1">
-                <strong className="text-slate-200">sábados:</strong>
                 <br />
-                10:00 - 14:00
               </li>
-              <li className="pt-1 text-brand-gold">domingos cerrado</li>
+              <li className="pt-1 text-brand-gold">sábados y domingos cerrado</li>
             </ul>
           </div>
         </div>
